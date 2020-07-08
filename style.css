@@ -1,17 +1,24 @@
 *{margin: 0; padding: 0;}
         #conteiner{
-            width: 1024px;
-            height: 768px;
+            max-width: 1024px;
+            max-height: 768px;
+        }
+        .divli ul{
+            margin-left:  30px;
+            max-width: 300px;
+            display: inline-block;
+            
         }
         p{
             font-size: 1.3em;
         }
         #foto{
-            float: right;
-            padding: 5px;
             border: black;
             border-width: 10px;
             border-style: double;
+            right: 20px;
+            max-width: 200px;
+            margin-left: 60px;
             
         }
         .txtbranco{
@@ -59,3 +66,4 @@
             width:150px;
             
             }
+        
