@@ -1,0 +1,29 @@
+body{
+    background-color: #ffcdb2;
+    width: 1366px;
+    height: 768px;
+
+}
+img{
+    max-width: 200px;
+}
+.cabeçalho{
+   background-color: #ffb4a2 ;
+}
+ nav ul li{
+     float: left;
+     padding: 25px;
+ }
+ .inline{
+     clear: both;
+     display: inline-flex;
+     background-color: #e5989b;
+ }
+ .artigo{
+
+     padding: 30px;
+     text-align: center;
+     
+    
+ }
+
