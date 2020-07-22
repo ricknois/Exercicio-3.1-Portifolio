@@ -57,15 +57,50 @@
   </head>
   <body>
     <script>
-      let h1 = document.createElement('h1');
-      h1.innerHTML = "Exercício 5.2 - JavaScript DOM";
+    
+      const h1 = document.createElement('h1');
+      h1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(h1);
 
-      let div =document.createElement('div');
-      div.className = 'main-content';
-      document.body.appendChild(div);
+      const divPrinc = document.createElement('div');
+      divPrinc.className = 'main-content';
+      document.body.appendChild(divPrinc);
+   
+      const divCent = document.createElement('div');
+      divCent.className = 'center-content';
+      divPrinc.appendChild(divCent);
 
-      let  
+      const p = document.createElement('p');
+      p.innerHTML = 'Texto Show';
+      divCent.appendChild(p);
+ 
+      const divLef = document.createElement('div');
+      divLef.className = 'left-content';
+      divPrinc.appendChild(divLef);
+
+      const divRig = document.createElement('div');
+      divRig.className = 'right-content';
+      divPrinc.appendChild(divRig);
+
+      const img = document.createElement('img');
+      img.className = 'small-image';
+      img.src = 'https://picsum.photos/200';
+      divLef.appendChild(img);
+
+      const ul = document.createElement('ul');
+      divRig.appendChild(ul);
+      const array = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+    for (let key in array) {
+      const li = document.createElement('li');
+      li.innerHTML = array[key];
+      ul.appendChild(li);
+    }
+
+      for (let i = 1; i <= 3; i+=1) {
+        const h3 = document.createElement('h3');
+        h3.innerHTML = i;
+        divPrinc.appendChild(h3);
+      }
     
     </script>
   </body>
