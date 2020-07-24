@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+</head>
+<body>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div id="solution"></div>
+
+  <script>
+    
+      
+      
+    function squareNumber(num) {
+        var squaredNumber = num * num;
+        return squaredNumber;
+    }
+
+    function halfOf(num) {
+        var half = num / 2;
+        return half;
+    }
+
+    function percentOf(num1, num2) {
+        var percent = (num1/num2) * 100;
+        return percent;
+    }
+
+    function areaOfCircle(radius) {
+        var area = Math.PI * squareNumber(radius);
+        return area;
+    }
+
+    let sqrButt = document.querySelector('#square-button');
+    sqrButt.addEventListener('click', function(){
+      let sqr = document.querySelector('#square-input').value;
+      document.querySelector('#solution').innerHTML = squareNumber(sqr);
+    })
+
+    let halfButt = document.querySelector('#half-button');
+    halfButt.addEventListener('click', function(){
+        let hlf = document.querySelector('#half-input').value;
+        document.querySelector('#solution').innerHTML = halfOf(hlf);
+    })
+
+    let percButt = document.querySelector('#percent-button');
+    percButt.addEventListener('click', function(){
+        let n1 = document.querySelector('#percent1-input').value;
+        let n2 = document.querySelector('#percent2-input').value;
+        document.querySelector('#solution').innerHTML = percentOf(n1, n2);
+    })
+
+    let areaButt = document.querySelector('#area-button');
+    areaButt.addEventListener('click', function(){
+        let rad = document.querySelector('#area-input').value;
+        document.querySelector('#solution').innerHTML = areaOfCircle(rad);
+    })
+
+  </script>
+</body>
+</html>
