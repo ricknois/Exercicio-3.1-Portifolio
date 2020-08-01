@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body onload="createState()">
+
+  <form  id="myform" onsubmit="showDiv()">
+    <fieldset>
+      <div>
+        <label for="name">Nome:</label>
+        <input maxlength="40" required="required" id="name" name="name" placeholder="Digite seu nome completo">
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@email.com" required="required" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+      </div>
+      <div>
+        <label for="cpf">CPF:</label>
+        <input maxlength="11" required="required" id="cpf" name="cpf" placeholder="00000000000" minlength="11">
+      </div>
+      <div>
+        <label for="endereco">Endereço:</label>
+        <input type="text" required="required" id="endereco" name="endereco" maxlength="200" placeholder="Rua, quadra, lote e bairro">
+      </div>
+      <div>
+        <label for="cidade">Cidade:</label>
+        <input id="cidade" name="didade" required="required"  type="text">
+      </div>
+      <div>
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado"></select>
+      </div>
+      <div>
+        <p>Selecione sua residencia:</p>
+        <label for="casa"><input type="radio" name="moradia" id="casa" value="casa" required="required">Casa</label>
+        <label for="apartamento"><input type="radio" required="required" name="moradia" id="apartamento" id="apartamento" value="apartamento">Apartamento</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+        <div>
+          <label for="resC">Resumo do currículo :</label>
+          <textarea name="resC" id="resC" cols="20" rows="2" maxlength="1000" required='required'></textarea>
+        </div>
+        <div>
+          <label for="cargo">Cargo:</label>
+          <input type="text" name="cargo" id="cargo" required='required' maxlength="40">
+        </div>
+        <div>
+          <label for="descCar">Descrição do cargo:</label>
+          <input type="text" name="descCar" id="descCar" maxlength="500" required='required'>
+        </div>
+        <div>
+          <label for="dateIni">Data de início</label>
+          <input type="text" name="dateIni" id="dateIni" required='required' maxlength="10" minlength="10" placeholder="dd/mm/yyyy" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$">
+        </div>
+    </fieldset>
+    <input type="submit" >
+  </form>
+  <section id="dados">
+
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
