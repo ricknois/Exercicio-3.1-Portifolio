@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="validation.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="DatePickerX.min.css">
+</head>
+<body onload="createState()" class="container-sm">
+
+  <form  id="myform" onsubmit="showDiv()">
+  
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input class="form-control" required='required' maxlength="40" id="name" name="name" placeholder="Digite seu nome completo" class="validate" data-validate="required" >
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input class="form-control" required='required' type="email" name="email" id="email" placeholder="email@email.com" class="validate" data-validate="required, email" >
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input class="form-control" maxlength="11" required="required" id="cpf" name="cpf" placeholder="00000000000" minlength="11">
+      </div>
+      <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input class="form-control" type="text" required="required" id="endereco" name="endereco" maxlength="200" placeholder="Rua, quadra, lote e bairro">
+      </div>
+      <div class="form-group">
+        <label for="cidade">Cidade:</label>
+        <input class="form-control" id="cidade" name="didade" required="required"  type="text">
+      </div>
+      <div class="form-group">
+        <label for="estado">Estado:</label>
+        <select class="form-control" name="estado" id="estado"></select>
+      </div>
+      <div class="form-group">
+        <p>Selecione sua residencia:</p>
+        <label for="casa"><input class="form-control" type="radio" name="moradia" id="casa" value="casa" required="required">Casa</label>
+        <label for="apartamento"><input class="form-control" type="radio" required="required" name="moradia" id="apartamento" id="apartamento" value="apartamento">Apartamento</label>
+      </div>
+    </fieldset>
+
+  
+        <div class="form-group">
+          <label for="resC">Resumo do currículo :</label>
+          <textarea class="form-control" name="resC" id="resC" cols="20" rows="2" maxlength="1000" required='required'></textarea>
+        </div>
+        <div class="form-group">
+          <label for="cargo">Cargo:</label>
+          <input class="form-control" type="text" name="cargo" id="cargo" required='required' maxlength="40">
+        </div>
+        <div class="form-group">
+          <label for="descCar">Descrição do cargo:</label>
+          <input class="form-control" type="text" name="descCar" id="descCar" maxlength="500" required='required'>
+        </div>
+        <div class="form-group">
+          <label for="myInputId">Data de início</label>
+          <input class="form-control" type="text" name="dateIni" id="myInputId" required='required' >
+        </div>
+    </fieldset>
+    <input class="btn btn-primary" type="submit" >
+  </form>
+  <section id="dados">
+
+  </section>
+  <script src="validation.min.js"></script>
+  <script src="DatePickerX.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
