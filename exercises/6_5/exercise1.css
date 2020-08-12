@@ -1,0 +1,61 @@
+body {
+  
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+
+@media (min-width: 768px){
+  body{
+    background-color: red;
+    margin: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .imgs{
+    width: 40%;
+    display: inline-block;
+    margin: 10px;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  
+}
+
+@media (min-width: 1300px){
+  body{
+    background-color: purple;
+    margin: 20px;
+    max-width: 1400px;
+
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .imgs{
+    width: 45%;
+    display: inline-block;
+    margin: 20px;
+  }
+  p {
+    font-size: 2em;
+  }
+}
+
+
+
+
