@@ -1,0 +1,70 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+
+.facebook-logo {
+  padding-top: 38px;
+}
+
+.facebook-login {
+  color: white;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-bottom: 18px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.facebook-slogan {
+  color: rgb(14, 56, 95);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 29px;
+  margin-left: 190px;
+  margin-top: 30px;
+  width: 400px;
+  word-spacing: -1px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.nameDif {
+  width: 140px;
+}
+
+.inputGrow {
+  width: 292px;
+}
+
+.genderLabel {
+  padding-right: 250px;
+}
